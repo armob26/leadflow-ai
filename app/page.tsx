@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+
 import { Bot, Zap, CalendarCheck, Mail, CheckCircle, ArrowRight, Sparkles } from "lucide-react";
 
 export default function AIAutomationWebsite() {
@@ -21,7 +20,7 @@ export default function AIAutomationWebsite() {
             <a href="#pricing" className="hover:text-white">Pricing</a>
           </nav>
           <a href="#contact">
-            <Button className="rounded-2xl bg-blue-500 px-5 hover:bg-blue-600">Get Started</Button>
+            <button className="rounded-2xl bg-blue-500 px-5 py-2 font-semibold text-white hover:bg-blue-600">Get Started</button>
           </a>
         </div>
       </header>
@@ -42,21 +41,21 @@ export default function AIAutomationWebsite() {
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a href="#contact">
-                <Button className="w-full rounded-2xl bg-blue-500 px-7 py-6 text-base hover:bg-blue-600 sm:w-auto">
+                <button className="flex w-full items-center justify-center rounded-2xl bg-blue-500 px-7 py-4 text-base font-semibold text-white hover:bg-blue-600 sm:w-auto">
                   Book a Free Demo <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                </button>
               </a>
               <a href="#process">
-                <Button variant="outline" className="w-full rounded-2xl border-white/20 bg-white/5 px-7 py-6 text-base text-white hover:bg-white/10 sm:w-auto">
+                <button className="w-full rounded-2xl border border-white/20 bg-white/5 px-7 py-4 text-base font-semibold text-white hover:bg-white/10 sm:w-auto">
                   See How It Works
-                </Button>
+                </button>
               </a>
             </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.1 }}>
-            <Card className="rounded-3xl border-white/10 bg-white/10 shadow-2xl backdrop-blur-xl">
-              <CardContent className="p-6">
+            <div className="$1">
+              <div className="$2">
                 <div className="rounded-2xl bg-slate-900 p-5">
                   <div className="mb-5 flex items-center justify-between">
                     <p className="font-semibold text-white">Automation Dashboard</p>
@@ -69,8 +68,8 @@ export default function AIAutomationWebsite() {
                     <AutomationRow icon={<Zap />} title="Follow up scheduled" text="Automatic reminder in 24 hours" />
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -112,8 +111,8 @@ export default function AIAutomationWebsite() {
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Simple pricing</h2>
           <p className="mt-4 text-slate-300">Start small, prove results, then upgrade when you need more automation.</p>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <Card className="rounded-3xl border-white/10 bg-white/10 text-left text-white">
-              <CardContent className="p-8">
+            <div className="$1">
+              <div className="$2">
                 <h3 className="text-2xl font-bold">Starter Setup</h3>
                 <p className="mt-3 text-slate-300">For businesses that want a simple lead response system.</p>
                 <p className="mt-8 text-5xl font-bold">$299</p>
@@ -123,10 +122,10 @@ export default function AIAutomationWebsite() {
                   <ListItem text="Basic follow up automation" />
                   <ListItem text="One week support" />
                 </ul>
-              </CardContent>
-            </Card>
-            <Card className="rounded-3xl border-blue-400/40 bg-blue-500/15 text-left text-white shadow-2xl">
-              <CardContent className="p-8">
+              </div>
+            </div>
+            <div className="$1">
+              <div className="$2">
                 <h3 className="text-2xl font-bold">Growth System</h3>
                 <p className="mt-3 text-slate-300">For businesses that want automation plus monthly optimization.</p>
                 <p className="mt-8 text-5xl font-bold">$499</p>
@@ -137,8 +136,8 @@ export default function AIAutomationWebsite() {
                   <ListItem text="Monthly automation updates" />
                   <ListItem text="Priority support" />
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -151,14 +150,14 @@ export default function AIAutomationWebsite() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="mailto:aryamobin37@gmail.com?subject=AI Automation Demo Request">
-              <Button className="rounded-2xl bg-blue-500 px-8 py-6 text-base hover:bg-blue-600">
+              <button className="rounded-2xl bg-blue-500 px-8 py-4 text-base font-semibold text-white hover:bg-blue-600">
                 Email Us Now
-              </Button>
+              </button>
             </a>
             <a href="https://calendly.com" target="_blank" rel="noreferrer">
-              <Button variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-8 py-6 text-base text-white hover:bg-white/10">
+              <button className="rounded-2xl border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white hover:bg-white/10">
                 Book a Demo
-              </Button>
+              </button>
             </a>
           </div>
           <p className="mt-6 text-sm text-slate-400">Replace this with your real email and Calendly link before sending it to clients.</p>
